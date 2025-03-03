@@ -1,0 +1,24 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.ts"]
+}
