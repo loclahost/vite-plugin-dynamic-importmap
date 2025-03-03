@@ -56,7 +56,7 @@ export function dynamicImportMap(pluginConfiguration: ImportMapConfiguration): P
 			const injectIntegrityMap = (preloadJsChunk: OutputChunk, integrityMap: string) => {
 				preloadJsChunk.code = preloadJsChunk.code
 					.toString()
-					.replace('getAttribute("nonce");', 'getAttribute("nounce"); let integrityMap=' + integrityMap + ';');
+					.replace('getAttribute("nonce");', 'getAttribute("nonce"); let integrityMap=' + integrityMap + ';');
 			};
 
 			const injectSetIntegrityAttribute = (preloadJsChunk: OutputChunk) => {
